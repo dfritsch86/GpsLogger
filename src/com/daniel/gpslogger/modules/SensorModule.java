@@ -71,6 +71,7 @@ public class SensorModule extends Service implements ModuleInterface, SensorEven
 	public void stopModuleMeasurement() {
 		for(int i = 0; i < this.sensorList.length ; i++) {
 			if(sensorList[i].isAvailable) {
+				Log.i("test", "test");
 				Log.i("SensorModule", "Stop sensor " + this.sensorList[i].description);
 				sm.unregisterListener(this, sm.getDefaultSensor(this.sensorList[i].sensorType));
 			} 
