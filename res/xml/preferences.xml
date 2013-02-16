@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+    <PreferenceCategory
+            android:title="Logging Info">
+            
+        <PreferenceScreen
+                android:key="location_info"
+                android:title="Logging Location"
+                android:summary="Characterstics of the logging place">
+                
+            <ListPreference 
+                android:key="location_value" 
+                android:entries="@array/place_car_array_keys" 
+                android:entryValues="@array/place_car_array_values" 
+                android:title="Logging Place" 
+                android:summary="Choose what best describes the logging place" 
+                android:defaultValue="@string/place_car_array_def" />
+                
+            <EditTextPreference
+                android:key="location_extra"
+                android:title="Extra Information"
+                android:summary="Input extra information about the logging place"
+                android:dialogTitle="Input extra information about the logging place" />
+            
+	  	</PreferenceScreen>
+	  	
+	     <PreferenceScreen
+	                android:key="holding_info"
+	                android:title="Device Holding"
+	                android:summary="Description of how the device was held while logging">
+            
+	         <ListPreference 
+                android:key="holding_value" 
+                android:entries="@array/holding_car_array_keys" 
+                android:entryValues="@array/holding_car_array_values" 
+                android:title="Device Holding Method" 
+                android:summary="Choose what best describes the device holding method" 
+                android:defaultValue="@string/holding_car_array_def" />
+	         
+	         <EditTextPreference
+                android:key="holding_extra"
+                android:title="Extra Information"
+                android:summary="Input extra information about the device holding method"
+                android:dialogTitle="Input extra information about the device holding method" />
+	            
+	  	</PreferenceScreen>
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+       	android:title="Logging Settings">
+
+        <EditTextPreference
+                android:key="cell_id"
+                android:title="Cell ID"
+                android:summary="ID of cellphone"
+        		android:defaultValue="none"
+                android:dialogTitle="ID for cellphone (Ex: htc_desire_001)" />
+
+    </PreferenceCategory>
+    
+</PreferenceScreen>

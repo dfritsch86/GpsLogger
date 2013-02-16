@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string-array name="place_car_array_keys">
+        <item>Outside Open Field</item>
+        <item>Outside Street Canyon</item>
+        <item>Inside Building</item>
+        <item>Other</item>
+    </string-array>
+    
+	<string-array name="place_car_array_values">
+        <item>oof</item>
+        <item>osc</item>
+        <item>ib</item>
+        <item>na</item>
+    </string-array>
+	
+	<string name="place_car_array_def">oof</string>
+	
+	<string-array name="holding_car_array_keys">
+        <item>In Hand Grip 1</item>
+        <item>In Hand Grip 2</item>
+        <item>In Pocket</item>
+        <item>On Mesuring Plate (clean measurement)</item>
+        <item>Other</item>
+    </string-array>
+    
+	<string-array name="holding_car_array_values">
+        <item>hg1</item>
+        <item>hg2</item>
+        <item>ip</item>
+        <item>mp</item>
+        <item>na</item>
+    </string-array>
+	
+	<string name="holding_car_array_def">mp</string>
+    
+	
+
+</resources>
