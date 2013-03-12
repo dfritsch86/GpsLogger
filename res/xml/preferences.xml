@@ -49,6 +49,13 @@
     
     <PreferenceCategory
        	android:title="Logging Settings">
+	     
+        <EditTextPreference
+                android:key="logging_id"
+                android:title="ID of measurement"
+                android:summary="Unique id of this measurement instance"
+                android:defaultValue="none"
+                android:dialogTitle="ID for measurement (Ex: meas_001)" />
 
         <EditTextPreference
                 android:key="cell_id"

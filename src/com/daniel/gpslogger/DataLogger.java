@@ -114,7 +114,8 @@ public class DataLogger extends Service {
 				prefs.getString("holding_extra", "none") + separator +
 				this.gpsModule.getModuleMeasurement() + separator +
 				this.sensorModule.getModuleMeasurement() + separator +
-				prefs.getString("cell_id", "none") +  "\n";
+				prefs.getString("cell_id", "none") + separator +
+				prefs.getString("logging_id", "none") +"\n";
 		
 		if(this.shouldLog) {
 			this.writer.addToGps(measurementString);

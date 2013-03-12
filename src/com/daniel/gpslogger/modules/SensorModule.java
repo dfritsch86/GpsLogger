@@ -151,7 +151,7 @@ public class SensorModule extends Service implements ModuleInterface, SensorEven
 				break;
 		}
 		
-		this.sensorList[index].sensorValues = event.values;
+		this.sensorList[index].sensorValues = event.values.clone();
 		
 	}
 	
